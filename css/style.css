@@ -322,12 +322,6 @@ section .back-to-menu {
   background-color: #5a49c1;
 }
 
-.promo__title,
-.promo__subtitle,
-.promo__address {
-  text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
-}
-
 @media (max-width: 768px) {
   .promo {
     padding-top: 40px;
@@ -389,10 +383,20 @@ section .back-to-menu {
     padding: 6px 16px;
   }
 
-  .promo__title,
-.promo__subtitle,
-.promo__address {
-  text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
-
+  .promo__overlay {
+	background-color: rgba(0, 0, 0, 0.6); /* чорна напівпрозора підкладка */
+	padding: 16px;
+	border-radius: 8px;
+	margin-bottom: 20px;
 }
+
+.promo__overlay--title {
+	margin: 0 10px;
+	text-align: center;
+}
+
+.promo__overlay--address {
+	margin: 0 10px;
+}
+
 }
