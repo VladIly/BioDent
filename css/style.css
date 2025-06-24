@@ -322,11 +322,12 @@ section .back-to-menu {
   background-color: #5a49c1;
 }
 
-.promo {
-  padding-top: 40px;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.3)),
-              url(../img/tooth.jpg) center top / cover no-repeat;
-}
+@media (max-width: 768px) {
+  .promo {
+    padding-top: 40px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.3)),
+                url(../img/tooth.jpg) center top / cover no-repeat;
+  }
 
   .promo__title {
     font-size: 32px;
@@ -382,3 +383,4 @@ section .back-to-menu {
     font-size: 12px;
     padding: 6px 16px;
   }
+}
