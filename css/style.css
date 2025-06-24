@@ -225,6 +225,9 @@ section h2 {
 }
 
 .service-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -233,6 +236,7 @@ section h2 {
   font-size: 16px;
   color: var(--dark-color);
   transition: transform 0.2s ease;
+  gap: 10px;
 }
 
 .service-list li:hover {
@@ -241,15 +245,16 @@ section h2 {
 }
 
 .service-list li strong {
-  color: #888;
-  margin-right: 8px;
-  font-weight: 400;
+  font-weight: 500;
+  margin-right: auto;
+  color: var(--dark-color);
 }
 
 .service-list li span {
-  float: right;
-  color: #007fa8;
   font-weight: 600;
+  color: #007fa8;
+  margin-left: auto;
+  white-space: nowrap;
 }
 
 html {
