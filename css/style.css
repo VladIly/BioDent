@@ -348,6 +348,8 @@ section .back-to-menu {
     flex-direction: column;
     gap: 20px;
     padding: 0 16px;
+	justify-content: flex-start; 
+  	align-items: stretch;        
   }
 
   .promo__text-block,
