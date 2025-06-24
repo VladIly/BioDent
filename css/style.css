@@ -134,7 +134,7 @@ html {
 	border: 1px solid transparent;
 	transition: all 0.3s ease;
 	cursor: pointer;
-	background-color: rgba(40, 36, 92, 0.719);
+	background-color: rgba(93, 93, 93, 0.889);
 }
 
 .keywords li a:hover,
