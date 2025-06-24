@@ -108,14 +108,15 @@ html {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	gap: 20px;
-	padding: 10px 40px;
+	gap: 12px;
+	padding: 12px 24px;
 	width: 100%;
 	position: absolute;
 	bottom: 0;
 	background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3), transparent);
 	backdrop-filter: blur(6px);
 	font-family: 'Inter', sans-serif;
+	z-index: 10;
 }
 
 .keywords li {
@@ -123,18 +124,25 @@ html {
 }
 
 .keywords li a {
+	display: inline-block;
 	color: #ffffff;
-	font-size: 12px;
-	font-weight: 400;
+	font-size: 13px;
+	font-weight: 500;
 	text-decoration: none;
-	padding: 4px 10px;
-	border-radius: 4px;
-	transition: background 0.3s ease, color 0.3s ease;
+	padding: 6px 14px;
+	border-radius: 6px;
+	border: 1px solid transparent;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	background-color: rgba(40, 36, 92, 0.719);
 }
 
-.keywords li a:hover {
+.keywords li a:hover,
+.keywords li a:focus {
 	background-color: rgba(255, 255, 255, 0.9);
 	color: #000000;
+	border-color: #ffd1ec;
+	box-shadow: 0 0 8px rgba(255, 177, 229, 0.3);
 }
 
 .about {
