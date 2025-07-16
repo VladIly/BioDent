@@ -66,8 +66,7 @@ html {
 	font-size: 32px;
 	font-weight: 100;
 	line-height: normal;
-	margin-top: 20px;
-	margin-bottom: 300px;
+
 }
 
 .btn{
@@ -151,11 +150,12 @@ html {
 }
 
 .about__title {
-	color: var(--dark-color);
-	font-style: italic;
-	font-size: 12px;
-	font-weight: 400;
-	line-height: normal;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--dark-color);
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .about__text {
@@ -335,6 +335,81 @@ section .back-to-menu {
   background-color: #5a49c1;
 }
 
+.about__text.formatted-list {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--dark-color);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: justify;
+  text-justify: inter-word;
+  padding: 0 10px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about__text strong {
+  font-weight: 600;
+  color: #000;
+}
+
+.about__text em {
+  font-style: italic;
+  color: #555;
+}
+
+.about__text .note {
+  color: red;
+  font-size: 18px;
+  vertical-align: super;
+}
+
+.info-block {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  color: #221f20;
+  font-family: 'Inter', sans-serif;
+}
+
+.info-block h2 {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.info-block .clinic {
+  margin-bottom: 40px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.info-block h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.info-block p {
+  margin: 6px 0;
+  line-height: 1.5;
+}
+
+.info-block a {
+  color: #007fa8;
+  text-decoration: none;
+}
+
+.info-block a:hover {
+  text-decoration: underline;
+}
+
+.promo__address strong {
+  display: block;
+  margin-bottom: 10px; 
+}
+
 @media (max-width: 768px) {
   .promo {
     padding-top: 40px;
@@ -361,7 +436,7 @@ section .back-to-menu {
     flex-direction: column;
     gap: 20px;
     padding: 0 16px;
-	justify-content: flex-start; 
+	  justify-content: flex-start; 
   	align-items: stretch;        
   }
 
@@ -373,6 +448,7 @@ section .back-to-menu {
   }
 
   .promo__address {
+    margin-top: 30px;
     font-size: 14px;
     color: #fff;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
@@ -431,5 +507,16 @@ section .back-to-menu {
   .back-to-menu {
     font-size: 12px;
     padding: 6px 16px;
+  }
+
+    .about__text.formatted-list {
+    font-size: 15px;
+    padding: 0 16px;
+    text-align: left; 
+  }
+
+  .about__title {
+    font-size: 18px;
+    text-align: center;
   }
 }
